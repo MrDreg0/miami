@@ -25,7 +25,15 @@ body {
   height: 20%;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to top, #040726, #040726 32%, transparent);
+  background-image: linear-gradient(to top, #040726, transparent);
+}
+
+.header .parallax {
+  background-image: url('../img/bg/main-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .header .info-wrapper {
