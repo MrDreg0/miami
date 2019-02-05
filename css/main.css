@@ -1,0 +1,129 @@
+/* Required for full background image */
+
+html,
+body,
+header,
+.view {
+height: 100%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #040726, #040726 32%, transparent);
+}
+
+.header .info-wrapper {
+  padding-top: 3.4375rem;
+}
+
+.header .logo {
+  margin: auto;
+}
+
+.phone-wrapper a,
+.contact_us-wrapper a {
+  color: rgba(255, 255, 255, .6);
+}
+
+.contact_us-wrapper a {
+  border-bottom: 1px dashed;
+}
+
+.phone-wrapper a:hover,
+.contact_us-wrapper a:hover,
+.phone-wrapper a:active,
+.contact_us-wrapper a:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar {
+  margin-top: -6.875rem;
+  bottom: 0;
+  background: transparent;
+  z-index: 2;
+  box-shadow: none;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.about {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.about h2 {
+  padding-right: 2.1875rem;
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+.about h2 span {
+  color: #00aaef;
+}
+
+.about-text-wrapper {
+  padding-top: 0.6rem;
+}
+
+.about-text-wrapper strong {
+  font-weight: 500;
+}
+
+.about-text-wrapper p {
+  margin-bottom: 0.2rem;
+  padding-left: 5.3125rem;
+  padding-right: 3.75rem;
+}
+
+.about-text-wrapper ol {
+  margin: 2rem 0;
+  padding-left: 5.3125rem;
+  padding-right: 12.5rem;
+}
+
+.about-text-wrapper ol li {
+  padding: 0.25rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
