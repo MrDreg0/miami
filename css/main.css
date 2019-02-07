@@ -1,5 +1,3 @@
-/* Required for full background image */
-
 html,
 body,
 header,
@@ -12,6 +10,78 @@ body {
   font-size: 16px;
   line-height: 1.25rem;
 }
+
+.container {
+  width: 970px;
+}
+
+.headline-wrapper {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pattern {
+  display: inline-block;
+  height: 72px;
+  position: relative;
+  background-image: url("../img/small-crown.png");
+  background-repeat: no-repeat;
+  background-position: center 59px;
+  transform: translateY(-1.875rem);
+  font-size: 3rem;
+}
+
+.pattern::before,
+.pattern::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  bottom: 10px;
+  background-color: #00aaef;
+}
+
+.pattern::before {
+  left: 0;
+}
+
+.pattern::after {
+  right: 0;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background-color: #00aaef;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form input {
+  margin: 0.3125rem;
+  padding: 1rem;
+  width: 70%;
+  border: none;
+  text-align: center;
+  background-color: #eeeeee;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #393939;
+}
+
+.form .btn {
+  margin-right: 0.2rem;
+  padding: 1rem;
+  width: 70%;
+}
+
+
+/* ------------ Header Block ------------ */
 
 .header {
   position: relative;
@@ -77,13 +147,14 @@ body {
   font-weight: 500;
 }
 
+/* ------------ About Block ------------ */
+
 .about {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
 
 .about h2 {
-  padding-right: 2.1875rem;
   font-size: 3rem;
   line-height: 3.75rem;
 }
@@ -109,19 +180,66 @@ body {
 .about-text-wrapper ol {
   margin: 2rem 0;
   padding-left: 5.3125rem;
-  padding-right: 12.5rem;
+  padding-right: 5.5rem;
 }
 
 .about-text-wrapper ol li {
   padding: 0.25rem 0;
 }
 
+/* ------------ Gallery Block ------------ */
 
+.gallery {
+  padding-bottom: 10rem;
+  background-color: #eeeeee;
+}
 
+.gallery-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.gallery-list .photo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.gallery-list p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
 
+.gallery-list p span{
+  color: #00aaef;
+}
 
+.gallery .btn {
+  margin: 0.2rem auto;
+  padding: 0.75rem 3rem;
+}
+
+/* ------------ Consultation Block ------------ */
+
+.consultation {
+  padding-bottom: 10rem;
+}
+
+.consultation .headline-wrapper {
+  margin-bottom: 5rem;
+}
+
+.consultation h3 {
+  margin-bottom: 2rem;
+  padding-right: 5rem;
+  font-weight: 500;
+}
+
+.consultation .description p {
+  padding-right: 2rem;
+}
 
 
 
