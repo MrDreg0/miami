@@ -11,6 +11,10 @@ body {
   line-height: 1.25rem;
 }
 
+section {
+  padding-bottom: 10rem;
+}
+
 .container {
   width: 970px;
 }
@@ -62,7 +66,8 @@ body {
   align-items: flex-end;
 }
 
-.form input {
+.form input,
+.form textarea {
   margin: 0.3125rem;
   padding: 1rem;
   width: 70%;
@@ -72,6 +77,15 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   color: #393939;
+}
+
+.form input:active,
+.form input:focus,
+.form textarea:active,
+.form textarea:focus{
+  text-align: left;
+  font-weight: 400;
+  color: #000000;
 }
 
 .form .btn {
@@ -151,7 +165,6 @@ body {
 
 .about {
   padding-top: 10rem;
-  padding-bottom: 10rem;
 }
 
 .about h2 {
@@ -190,7 +203,6 @@ body {
 /* ------------ Gallery Block ------------ */
 
 .gallery {
-  padding-bottom: 10rem;
   background-color: #eeeeee;
 }
 
@@ -223,10 +235,6 @@ body {
 
 /* ------------ Consultation Block ------------ */
 
-.consultation {
-  padding-bottom: 10rem;
-}
-
 .consultation .headline-wrapper {
   margin-bottom: 5rem;
 }
@@ -241,8 +249,108 @@ body {
   padding-right: 2rem;
 }
 
+/* ------------ Testimonials Block ------------ */
 
+.testimonials {
+  background-color: #eeeeee;
+}
 
+.testimonials-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.testimonials-author-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testimonials-author-wrapper img {
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+}
+
+.testimonials-author-wrapper b {
+  font-weight: 600;
+}
+
+.testimonials-author-wrapper i {
+  font-weight: 400;
+  color: #696973;
+}
+
+.testimonials-list p {
+  margin-top: 2.25rem;
+  line-height: 1.375rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* ------------ Contact Block ------------ */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-info p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info a,
+.contact-info p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-info .email {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info .address {
+  margin-top: 1.5rem;
+  width: 36%;
+}
+
+/* ------------ Footer ------------ */
+
+footer {
+  padding: 13rem 0 2rem;
+  background-image: url('../img/bg/footer-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto 10rem;
+}
+
+footer .copyright {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  color: #00aaef;
+  cursor: pointer;
+}
 
 @media (max-width: 740px) {
   html,
